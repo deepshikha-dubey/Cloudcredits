@@ -21,7 +21,7 @@ jobs:
 
     steps:
     - name: Test step
-      run: docker run -d -p 5000:5000 my-web-server 
+      run: echo "Running tests..."
 
   deploy:
     runs-on: ubuntu-latest

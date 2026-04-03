@@ -12,3 +12,6 @@
 ## Project 2: CI/CD Pipeline
 - Implemented GitHub Actions
 - Automated build process
+
+  <img width="2520" height="1096" alt="image" src="https://github.com/user-attachments/assets/e8374d5f-3c0a-4886-ab8a-3663f46b7a0f" />
+

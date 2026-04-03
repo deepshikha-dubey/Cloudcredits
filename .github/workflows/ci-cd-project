@@ -1,0 +1,17 @@
+name: CI/CD Project
+
+on:
+  push:
+    paths:
+      - 'Project-2-CI-CD-Pipeline/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Run CI Test
+      run: echo "Running CI/CD pipeline..."

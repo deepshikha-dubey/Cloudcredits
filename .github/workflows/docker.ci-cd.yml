@@ -26,3 +26,7 @@ jobs:
         file: ./Project-1-Web-Server-Docker/Dockerfile
         push: true
         tags: deepshikhadubey/my-web-server:latest
+
+    - name: Debug - List files
+      run: |
+         ls -R    

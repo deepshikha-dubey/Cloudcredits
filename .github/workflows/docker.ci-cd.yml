@@ -23,5 +23,6 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: ./Project-1-Web-Server-Docker
+        file: ./Project-1-Web-Server-Docker/Dockerfile
         push: true
         tags: deepshikhadubey/my-web-server:latest

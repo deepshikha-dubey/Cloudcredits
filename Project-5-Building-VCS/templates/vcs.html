@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My VCS</title>
+    <style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 30px;
+        color: #333;
+    }
+
+    form {
+        margin: 20px auto;
+        width: 90%;
+        max-width: 500px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+        .init-btn { background: #007bff; color: white; }
+        .add-btn { background: #28a745; color: white; }
+        .commit-btn { background: #ffc107; }
+        .log-btn { background: #343a40; color: white; } 
+
+    button:hover {
+        opacity: 0.85;
+    }
+
+    form {
+            margin: 15px 0;
+            display: flex;
+            gap: 10px;
+        }
+    
+    input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }    
+
+    /* Logs output */
+    pre {
+        background: #222;
+        color: #0f0;
+        padding: 15px;
+        border-radius: 8px;
+        width: 90%;
+        max-width: 600px;
+        margin: 20px auto;
+        overflow-x: auto;
+    }
+
+    p {
+        text-align: center;
+        color: red;
+        font-weight: bold;
+    }
+   .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+   
+
+<h2>My Version Control System</h2>
+
+<button onclick="initRepo()" class="init-btn">Init Repo</button>
+
+<br><br>
+
+<input id="file" placeholder="Enter filename">
+<button onclick="addFile()" class="add-btn">Add</button>
+
+<br><br>
+
+<input id="msg" placeholder="Commit message">
+<button onclick="commit()" class="coomit-btn">Commit</button>
+
+<br><br>
+
+<button onclick="loadLogs()" class="log-btn">Show Logs</button>
+
+<div id="output"></div>
+ </div>
+
+<script>
+async function initRepo(){
+    let res = await fetch('/init', {method:'POST'});
+    let data = await res.json();
+    document.getElementById("output").innerHTML = data.msg;
+}
+
+async function addFile(){
+    let file = document.getElementById("file").value;
+    let res = await fetch('/add',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({filename:file})
+    });
+    let data = await res.json();
+    document.getElementById("output").innerHTML = data.msg;
+}
+
+async function commit(){
+    let msg = document.getElementById("msg").value;
+    let res = await fetch('/commit',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({message:msg})
+    });
+    let data = await res.json();
+    document.getElementById("output").innerHTML = data.msg;
+}
+
+async function loadLogs(){
+    let res = await fetch('/log');
+    let data = await res.json();
+    document.getElementById("output").innerHTML = JSON.stringify(data, null, 2);
+}
+</script>
+
+</body>
+</html>

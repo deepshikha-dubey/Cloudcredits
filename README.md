@@ -59,17 +59,17 @@ Process:
       docker tag myvcs-app deepshikhadubey/myvcs-app:latest
       docker push deepshikhadubey/myvcs-app:latest
    3. CI/CD with GitHub Actions Pushed project code to GitHub
-      configured Github actions workflows, Stored Docker hub credentials           using Github Secrets automated
+      configured Github actions workflows,
+      Stored Docker hub credentials using Github Secrets
       🔐 Secrets Used DOCKER_USERNAME DOCKER_PASSWORD
+      
+<img width="1392" height="703" alt="Screenshot 2026-04-11 114655" src="https://github.com/user-attachments/assets/1b3e9267-6bb2-46f6-b55b-ac3f9e805dd9" />
 
 
-     <img width="1392" height="704" alt="image" src="https://github.com/user-attachments/assets/6fddc5b3-dbe8-463c-a0de-751f06e94999" />
+<img width="1334" height="757" alt="Screenshot 2026-04-11 114550" src="https://github.com/user-attachments/assets/f7d06451-00d9-44b8-9eab-459da592e95d" />
 
-     <img width="1334" height="758" alt="image" src="https://github.com/user-attachments/assets/77f67723-de30-48c2-be69-f7befb30f86c" />
 
-  
-   6. 
-
+ 
 
 
 

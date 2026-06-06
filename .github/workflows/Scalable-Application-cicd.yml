@@ -17,5 +17,5 @@ jobs:
               run: |
                  cd Project-8-Build-Scalable-Application-with-K8s-Docker
                  pip install -r requirements.txt
-            - name: Run tests
+            - name: Run test cases on code commits
               run: pytest 

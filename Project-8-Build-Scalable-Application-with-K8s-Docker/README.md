@@ -35,6 +35,8 @@ open ii on browser http://http://127.0.0.1:5000/
 
 <img width="1988" height="1316" alt="image" src="https://github.com/user-attachments/assets/032d7e86-57b5-4d30-901a-ae86db38d203" />
 
+Automatic run in workflow
+<img width="1872" height="798" alt="image" src="https://github.com/user-attachments/assets/567b0d0b-94ed-4e8a-bb49-04958832497a" />
 
 
    

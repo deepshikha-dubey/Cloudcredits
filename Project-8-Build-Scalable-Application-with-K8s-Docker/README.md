@@ -18,6 +18,11 @@
 3. Continuous Integration (CI)
     Automate testing using CI tools (GitHub Actions).
     Run test cases on code commits.
+<img width="1856" height="920" alt="image" src="https://github.com/user-attachments/assets/62116b39-3a85-4770-9658-b97418ae68ba" />
+
+4. Continuous Deployment (CD)
+    Deploy to a cloud or server (Kubernetes).
+    Automate deployment with CI/CD pipelines.
 
 
    

@@ -15,6 +15,8 @@
 
    <img width="1910" height="1434" alt="image" src="https://github.com/user-attachments/assets/2dbf1a2d-1717-4af5-a744-dafc75c7df02" />
 
+   
+
 3. Continuous Integration (CI)
     Automate testing using CI tools (GitHub Actions).
     Run test cases on code commits.
@@ -23,6 +25,16 @@
 4. Continuous Deployment (CD)
     Deploy to a cloud or server (Kubernetes).
     Automate deployment with CI/CD pipelines.
+
+<img width="1708" height="388" alt="image" src="https://github.com/user-attachments/assets/3a5c3654-6950-48a2-9f73-f882d7559167" />
+
+Scaling replicas 
+<img width="2440" height="774" alt="image" src="https://github.com/user-attachments/assets/6b946942-d4b5-448e-ac53-5f9de8e85314" />
+
+open ii on browser http://http://127.0.0.1:5000/
+
+<img width="1988" height="1316" alt="image" src="https://github.com/user-attachments/assets/032d7e86-57b5-4d30-901a-ae86db38d203" />
+
 
 
    
